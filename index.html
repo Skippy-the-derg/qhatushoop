@@ -28,8 +28,13 @@
        body {
          background-color: #E6EBE0;
       }
-      .altmode {
-        background-color: #DD614A;
+.dark-mode {
+        background-color: #2A4747;
+        color: #E6EBE0;
+      }
+      .light-mode {
+        background-color: #E6EBE0;
+        color: #2A4747;
 
       h1 {
             padding-top: 40px;
@@ -75,6 +80,21 @@
   </style>
 </head>
 <body>
+  <h3 id="DarkModetext">Normal mode</h3>
+    <button onclick="darkMode()">Darkmode</button>
+    <button onclick="lightMode()">LightMode</button>
+    <script>
+      function darkMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "dark-mode";
+        content.innerText = "Nite mode";
+      }
+      function lightMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "light-mode";
+        content.innerText = "Normal mode";
     <section class="">
         <h1>qhatushoop Alpha 0.16</h1>
         <div class="flex-box">
